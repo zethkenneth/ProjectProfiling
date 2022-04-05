@@ -40,13 +40,13 @@
                 </li>
 
                 <li>
-                    <a class="nav-link px-3 sidebar-link text-white" href="/admin/users">
+                    <a class="nav-link px-3 sidebar-link text-white" href="/admin/projectindex">
                         <span><i class="fas fa-users"></i></span>
                         <span class="cash">Project</span>
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link px-3 sidebar-link text-white" href="/admin/facilities">
+                    <a class="nav-link px-3 sidebar-link text-white" href="/admin/employeeindex">
                         <span><i class="fas fa-folder-open"></i></span>
                         <span class="social">Employee</span>
                     </a>

@@ -57,6 +57,8 @@
         </nav>
     </div>
 
+    
+
     <h2 class="col-md-12 fw-bold"></h2>
     <div class="cardbox">
         <div class="card">
@@ -99,7 +101,7 @@
         <div class="card">
             <div>
                 <div class="numbers">1,023</div>
-                <div class="cardname">Senior Citizens</div>
+                <div class="cardname">Completed Projects</div>
 
             </div>
 

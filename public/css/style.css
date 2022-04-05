@@ -36,11 +36,11 @@ main{
 
 /* table recent */
 .recent{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .recent h3{
-    margin-top: 3rem;
+    margin-top: 1rem;
     /* color: var(--text-grey); */
 }
 
@@ -48,7 +48,20 @@ main{
     background: #fff;
     border-radius: 7px;
 }
+ .col-md-123
+ {
+     padding-top: 60px;
+  padding-bottom: 0px;
+ }
 
+ .col-md-1234
+ {
+     padding-top: 0px;
+  padding-bottom: 0px;
+ }
+ 
+
+ 
 
 /* 
 .sidebar-link{
@@ -119,7 +132,7 @@ main{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-gap: 20px;
-
+        
 
 
     }
@@ -325,6 +338,8 @@ main{
 {
     color: white;
 }
+
+
 
 
   
