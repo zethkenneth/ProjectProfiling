@@ -130,7 +130,7 @@
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title"><strong>Create Ptoject</strong></h5>
+                        <h5 class="modal-title"><strong>Create Project</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
@@ -168,6 +168,50 @@
             </div>
         </div>
 
+           <!-- Modal -->
+           <div class="modal fade" id="modalUpdateProject" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title"><strong>Update Project</strong></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="row g-3" method="POST" enctype="multipart/form-data" action="/users/submit-form">
+                            @csrf
+
+                            <div class="form-floating form-group col-6">
+                                <input type="text" class="form-control" id="projectname" name="projectname" placeholder=" " >
+                                <label for="firstName" >Project Name <span class="text-danger">*</span> </label>
+                            </div>
+                            <div class="form-floating form-group col-6">
+                                <input type="text" class="form-control" id="datestarted" name="datestarted" placeholder=" " >
+                                <label for="firstName" >Date Started <span class="text-danger">*</span> </label>
+                            </div>
+                            <div class="form-floating form-group col-6">
+                                <input type="date" class="form-control" placeholder=" " name="duedate">
+                                <label>Due Date (dd/mm/yyyy) <span class="text-danger">*</span> </label>
+                            </div>
+
+                         
+
+                       
+
+                         
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Update</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <div class="recent-table-card">
             <div class="table-responsive">
               
@@ -195,7 +239,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ url('/admin/project/view/') }}" class="btn btn-outline-warning">View</a> 
-                                    <a href="{{ url('/admin/project/update/') }}" class="btn btn-outline-info">Update</a> 
+                                    <a button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalUpdateProject">Edit</a> 
 
                                 
 

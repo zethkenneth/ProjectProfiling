@@ -16,7 +16,7 @@
                 </li>
 
                 <li>
-                    <a class="nav-link px-3 sidebar-link text-white" href="/admin/dashboard">
+                    <a class="nav-link px-3 sidebar-link text-white" href="/">
                         <span><i class="fa fa-chart-line"></i></span>
                         <span class="dashboard">Dashboard</span>   
                     </a>
