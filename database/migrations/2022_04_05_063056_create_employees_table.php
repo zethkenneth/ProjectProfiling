@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('firstName');
             $table->string('middleName');
             $table->string('extName');
-            $table->unsignedBigInteger('role_id');
-            $table->foreign('role_id')->references('roleId')->on('roles');
+            $table->unsignedBigInteger('position_id');
+            $table->foreign('position_id')->references('positionId')->on('positions');
         });
     }
 

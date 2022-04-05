@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('assignedProjects', function (Blueprint $table) {
+        Schema::create('assigned_projects', function (Blueprint $table) {
             $table->id('assignedProjectId'); 
             $table->date('assignedDate')->useCurrent();
             $table->unsignedBigInteger('employee_id');

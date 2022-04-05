@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id('projectId');
             $table->string('projectDescription');
+            $table->string('projectStatus');
             $table->date('projectStart')->useCurrent();
             $table->date('projectEnd');
         });
