@@ -113,17 +113,14 @@
 
 
     <section class="recent">
-
-        <h3 class="col-md-1234 fw-bold">Projects</h3>
-
-     
-        
-        <!-- Button trigger modal -->
-        <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreateProject">
+ 
+        <h3 class="col-md-1234 fw-bold">Projects   <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreateProject">
             <span><i class="fas fa-user-plus"></i></span>
             Create
-        </button>
-    
+        </button></h3>
+        <!-- Button trigger modal -->
+      
+        
         <!-- Modal -->
         <div class="modal fade" id="modalCreateProject" data-bs-backdrop="static">
             <div class="modal-dialog modal-lg" role="document">

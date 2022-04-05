@@ -114,15 +114,15 @@
 
     <section class="recent">
 
-        <h3 class="col-md-1234 fw-bold">Users</h3>
+        <h3 class="col-md-1234 fw-bold">Users  <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreateEmployee">
+            <span><i class="fas fa-user-plus"></i></span>
+            Create
+        </button></h3>
 
      
         
         <!-- Button trigger modal -->
-        <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreateEmployee">
-            <span><i class="fas fa-user-plus"></i></span>
-            Create
-        </button>
+       
     
         <!-- Modal -->
         <div class="modal fade" id="modalCreateEmployee" data-bs-backdrop="static">
