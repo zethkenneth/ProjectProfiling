@@ -63,7 +63,7 @@
 
     
 
-    <h2 class="col-md-123 fw-bold">Overview for Projects</h2>
+    <h2 class="col-md-123 fw-bold">Overview for Assigning Project</h2>
 
     
 
@@ -85,7 +85,7 @@
         <div class="card">
             <div>
                 <div class="numbers">1,023</div>
-                <div class="cardname">Ongoing Projects</div>
+                <div class="cardname">Employees with project</div>
 
             </div>
 
@@ -97,7 +97,7 @@
         <div class="card">
             <div>
                 <div class="numbers">1,023</div>
-                <div class="cardname">Completed Projects</div>
+                <div class="cardname">Employees with no project</div>
 
             </div>
 
@@ -106,100 +106,53 @@
             </div>
 
         </div>
-        
+       
 
     </div>
 
 
     <section class="recent">
- 
-        <h3 class="col-md-1234 fw-bold">Projects   <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreateProject">
-        <img src="{{asset('assets/img/add.png')}}" width="20" height="20">
-       
-            Create
-        </button></h3>
+
+        <h3 class="col-md-1234 fw-bold">Projects</h3>
+
+     
         <!-- Button trigger modal -->
-      
-        
-        <!-- Modal -->
-        <div class="modal fade" id="modalCreateProject" data-bs-backdrop="static">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title"><strong>Create Project</strong></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <form class="row g-3" method="POST" enctype="multipart/form-data" action="/users/submit-form">
-                            @csrf
-
-                            <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="projectname" name="projectname" placeholder=" " >
-                                <label for="firstName" >Project Name <span class="text-danger">*</span> </label>
-                            </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="datestarted" name="datestarted" placeholder=" " >
-                                <label for="firstName" >Date Started <span class="text-danger">*</span> </label>
-                            </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="date" class="form-control" placeholder=" " name="duedate">
-                                <label>Due Date (dd/mm/yyyy) <span class="text-danger">*</span> </label>
-                            </div>
-
-                         
-
-                       
-
-                         
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-success">Save</button>
-                            </div>
-
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+       
+    
+       
 
            <!-- Modal -->
-           <div class="modal fade" id="modalUpdateProject" data-bs-backdrop="static">
+           <div class="modal fade" id="modalUpdateEmployee" data-bs-backdrop="static">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title"><strong>Update Project</strong></h5>
+                        <h5 class="modal-title"><strong>Assign Employee</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body">
-                        <form class="row g-3" method="POST" enctype="multipart/form-data" action="/users/submit-form">
+                        <form class="row g-3" method="POST" enctype="multipart/form-data" action="/employee/submit-form">
                             @csrf
 
+                          
                             <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="projectname" name="projectname" placeholder=" " >
-                                <label for="firstName" >Project Name <span class="text-danger">*</span> </label>
-                            </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="datestarted" name="datestarted" placeholder=" " >
-                                <label for="firstName" >Date Started <span class="text-danger">*</span> </label>
-                            </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="date" class="form-control" placeholder=" " name="duedate">
-                                <label>Due Date (dd/mm/yyyy) <span class="text-danger">*</span> </label>
+                                <select class="form-select mr-sm-2" id="workPosition" name="workposition">
+                                    <option selected="">Select Employee</option>
+                                    <option value="ADMIN">ZETH KENNETH PUNGTOD</option>
+                                    <option value="PROGRAMMER">JUSTINE BRYLE SUMAGAYSAY</option>
+                                 
+                                </select>
+                                <label for="workPosition">Work Position <span class="text-danger">*</span></label>
                             </div>
 
-                         
 
-                       
+                           
 
                          
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-success">Update</button>
+                                <button type="submit" class="btn btn-success">Assign</button>
                             </div>
 
                         </form>
@@ -216,10 +169,10 @@
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Project Name</th>
-                            <th>Date Started</th>
+                            <th>Name</th>
+                            <th>Position</th>
                          
-                            <th>Due Date</th>
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -235,8 +188,8 @@
                                  
                                 </td>
                                 <td>
-                                    <a href="{{ url('/admin/project/view/') }}" class="btn btn-outline-warning">View</a> 
-                                    <a button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalUpdateProject">Edit</a> 
+                                    <a href="{{ url('/admin/employee/view/') }}" class="btn btn-outline-warning">View</a> 
+                                    <a button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalUpdateEmployee">Assign</a> 
 
                                 
 

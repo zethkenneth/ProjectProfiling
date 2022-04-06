@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\PositionsController;
+use App\Http\Controllers\AssigningProjectController;
+use App\Http\Controllers\UserAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +21,12 @@ use App\Http\Controllers\ProjectsController;
 Route::get('/', function () {
     return view('dashboard');
 });
-
+//admin
 Route::get('admin/employeeindex', [EmployeesController::class, 'index']);
 Route::get('admin/projectindex', [ProjectsController::class, 'index']);
-
-
+Route::get('admin/positionindex', [PositionsController::class, 'index']);
+Route::get('admin/assigningprojectindex', [AssigningProjectController::class, 'index']);
+Route::get('/login', [UserAuthController::class, 'login']); //login route
 
 
 

@@ -17,7 +17,7 @@
 
                 <li>
                     <a class="nav-link px-3 sidebar-link text-white" href="/">
-                        <span><i class="fa fa-chart-line"></i></span>
+                    <img src="{{asset('assets/img/home.png')}}" width="28" height="28" padding="10px">
                         <span class="dashboard">Dashboard</span>   
                     </a>
                 </li>
@@ -27,9 +27,9 @@
                 </li>
 
                 <li>
-                <a class="nav-link px-3 sidebar-link text-white" href="/admin/dashboard">
-                        <span><i class="fas fa-chart-line"></i></span>
-                        <span class="profile">Profile</span>   
+                <a class="nav-link px-3 sidebar-link text-white" href="/admin/assigningprojectindex">
+                <img src="{{asset('assets/img/assign.png')}}" width="28" height="28" padding="10px">
+                        <span class="profile">Assigning Projects</span>   
                     </a>
                 </li>
 
@@ -41,14 +41,20 @@
 
                 <li>
                     <a class="nav-link px-3 sidebar-link text-white" href="/admin/projectindex">
-                        <span><i class="fas fa-users"></i></span>
+                    <img src="{{asset('assets/img/project.png')}}" width="28" height="28" padding="10px">
                         <span class="cash">Project</span>
                     </a>
                 </li>
                 <li>
                     <a class="nav-link px-3 sidebar-link text-white" href="/admin/employeeindex">
-                        <span><i class="fas fa-folder-open"></i></span>
+                    <img src="{{asset('assets/img/employees.png')}}" width="28" height="28" padding="10px">
                         <span class="social">Employee</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link px-3 sidebar-link text-white" href="/admin/positionindex">
+                    <img src="{{asset('assets/img/position.png')}}" width="28" height="28" padding="10px">
+                        <span class="social">Work Position</span>
                     </a>
                 </li>
               

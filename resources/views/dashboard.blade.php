@@ -63,13 +63,13 @@
     <div class="cardbox">
         <div class="card">
             <div>
-                <div class="numbers">1,023</div>
-                <div class="cardname">Total Employees</div>
-
+                <div class="numbers">1,023 </div>
+                <div class="cardname">Total Employees </div>
+               
             </div>
 
             <div class="iconbox">
-               <i></i>
+          
             </div>
 
         </div>
@@ -102,6 +102,7 @@
             <div>
                 <div class="numbers">1,023</div>
                 <div class="cardname">Completed Projects</div>
+
 
             </div>
 

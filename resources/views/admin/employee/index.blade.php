@@ -27,8 +27,7 @@
                     <div class="input-group my-3 my-lg-0">
                         <input type="text" name="search" class="form-control" placeholder="Search..."
                             aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
-                                    class="fas fa-search"></i>
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><img src="{{asset('assets/img/search.png')}}" width="20" height="20">
                             </button>
                     </div>
                 </form>
@@ -64,7 +63,7 @@
 
     
 
-    <h2 class="col-md-123 fw-bold">Overview for Users</h2>
+    <h2 class="col-md-123 fw-bold">Overview for Employee</h2>
 
     
 
@@ -115,7 +114,7 @@
     <section class="recent">
 
         <h3 class="col-md-1234 fw-bold">Users  <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreateEmployee">
-            <span><i class="fas fa-user-plus"></i></span>
+            <span>  <img src="{{asset('assets/img/add.png')}}" width="20" height="20"></span>
             Create
         </button></h3>
 
@@ -166,7 +165,7 @@
                                 </select>
                                 <label for="gender">Gender <span class="text-danger">*</span></label>
                             </div>
-
+                           
                             <div class="form-floating form-group col-6">
                                 <select class="form-select mr-sm-2" id="workPosition" name="workposition">
                                     <option selected="">Select Work Position</option>

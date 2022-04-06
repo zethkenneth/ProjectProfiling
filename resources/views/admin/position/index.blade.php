@@ -63,7 +63,7 @@
 
     
 
-    <h2 class="col-md-123 fw-bold">Overview for Projects</h2>
+    <h2 class="col-md-123 fw-bold">Overview for Position</h2>
 
     
 
@@ -72,7 +72,7 @@
         <div class="card">
             <div>
                 <div class="numbers">1,023</div>
-                <div class="cardname">Total Projects</div>
+                <div class="cardname">Total Position</div>
 
             </div>
 
@@ -82,30 +82,6 @@
 
         </div>
 
-        <div class="card">
-            <div>
-                <div class="numbers">1,023</div>
-                <div class="cardname">Ongoing Projects</div>
-
-            </div>
-
-            <div class="iconbox">
-               <i></i>
-            </div>
-
-        </div>
-        <div class="card">
-            <div>
-                <div class="numbers">1,023</div>
-                <div class="cardname">Completed Projects</div>
-
-            </div>
-
-            <div class="iconbox">
-               <i></i>
-            </div>
-
-        </div>
         
 
     </div>
@@ -113,21 +89,22 @@
 
     <section class="recent">
  
-        <h3 class="col-md-1234 fw-bold">Projects   <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreateProject">
+        <h3 class="col-md-1234 fw-bold">Position <button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalCreatePosition">
         <img src="{{asset('assets/img/add.png')}}" width="20" height="20">
-       
+     
             Create
+            
         </button></h3>
         <!-- Button trigger modal -->
       
         
         <!-- Modal -->
-        <div class="modal fade" id="modalCreateProject" data-bs-backdrop="static">
+        <div class="modal fade" id="modalCreatePosition" data-bs-backdrop="static" style="z-index: 1600;">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title"><strong>Create Project</strong></h5>
+                        <h5 class="modal-title"><strong>Create Position</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
@@ -136,17 +113,10 @@
                             @csrf
 
                             <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="projectname" name="projectname" placeholder=" " >
-                                <label for="firstName" >Project Name <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="positionname" name="projectname" placeholder=" " >
+                                <label for="firstName" >Position Name <span class="text-danger">*</span> </label>
                             </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="datestarted" name="datestarted" placeholder=" " >
-                                <label for="firstName" >Date Started <span class="text-danger">*</span> </label>
-                            </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="date" class="form-control" placeholder=" " name="duedate">
-                                <label>Due Date (dd/mm/yyyy) <span class="text-danger">*</span> </label>
-                            </div>
+                           
 
                          
 
@@ -171,7 +141,7 @@
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title"><strong>Update Project</strong></h5>
+                        <h5 class="modal-title"><strong>Update Position</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
@@ -180,17 +150,11 @@
                             @csrf
 
                             <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="projectname" name="projectname" placeholder=" " >
-                                <label for="firstName" >Project Name <span class="text-danger">*</span> </label>
+                                <input type="text" class="form-control" id="positionname" name="positionname" placeholder=" " >
+                                <label for="firstName" >Position Name <span class="text-danger">*</span> </label>
                             </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="text" class="form-control" id="datestarted" name="datestarted" placeholder=" " >
-                                <label for="firstName" >Date Started <span class="text-danger">*</span> </label>
-                            </div>
-                            <div class="form-floating form-group col-6">
-                                <input type="date" class="form-control" placeholder=" " name="duedate">
-                                <label>Due Date (dd/mm/yyyy) <span class="text-danger">*</span> </label>
-                            </div>
+                           
+                           
 
                          
 
@@ -216,11 +180,10 @@
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Project Name</th>
-                            <th>Date Started</th>
-                         
-                            <th>Due Date</th>
+                            <th>Position Name</th>
+                            <th>Date created</th>
                             <th>Action</th>
+                         
                         </tr>
                     </thead>
     
@@ -231,9 +194,7 @@
                                 <td></td>
                                 <td></td>
                                 
-                                <td>                    
-                                 
-                                </td>
+                              
                                 <td>
                                     <a href="{{ url('/admin/project/view/') }}" class="btn btn-outline-warning">View</a> 
                                     <a button type="button" class="m-2 btn btn-success" data-bs-toggle="modal"  data-bs-target="#modalUpdateProject">Edit</a> 
