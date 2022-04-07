@@ -88,6 +88,7 @@ main{
         visibility: visible !important;
         top:var(--topNavbarHeight);
         height: calc(100% - var(--topNavbarHeight)); 
+      
     }
 
     .navbar-brand
@@ -161,7 +162,8 @@ main{
 
     .cardbox .card .iconbox
     {
-        font-size: 2.5em;
+
+        font-size: 2em;
         color: #72e1e9;
     }
 

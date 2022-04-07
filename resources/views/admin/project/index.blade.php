@@ -77,7 +77,7 @@
             </div>
 
             <div class="iconbox">
-               <i></i>
+           
             </div>
 
         </div>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="iconbox">
-               <i></i>
+              
             </div>
 
         </div>
@@ -123,7 +123,7 @@
         
         <!-- Modal -->
         <div class="modal fade" id="modalCreateProject" data-bs-backdrop="static">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
@@ -154,8 +154,9 @@
 
                          
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               
                                 <button type="submit" class="btn btn-success">Save</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
 
                         </form>

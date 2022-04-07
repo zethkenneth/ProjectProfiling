@@ -100,7 +100,7 @@
         
         <!-- Modal -->
         <div class="modal fade" id="modalCreatePosition" data-bs-backdrop="static" style="z-index: 1600;">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
@@ -112,7 +112,7 @@
                         <form class="row g-3" method="POST" enctype="multipart/form-data" action="/users/submit-form">
                             @csrf
 
-                            <div class="form-floating form-group col-6">
+                            <div class="form-floating form-group">
                                 <input type="text" class="form-control" id="positionname" name="projectname" placeholder=" " >
                                 <label for="firstName" >Position Name <span class="text-danger">*</span> </label>
                             </div>
@@ -137,7 +137,7 @@
 
            <!-- Modal -->
            <div class="modal fade" id="modalUpdateProject" data-bs-backdrop="static">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
@@ -149,7 +149,7 @@
                         <form class="row g-3" method="POST" enctype="multipart/form-data" action="/users/submit-form">
                             @csrf
 
-                            <div class="form-floating form-group col-6">
+                            <div class="form-floating form-group">
                                 <input type="text" class="form-control" id="positionname" name="positionname" placeholder=" " >
                                 <label for="firstName" >Position Name <span class="text-danger">*</span> </label>
                             </div>
@@ -162,8 +162,9 @@
 
                          
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               
                                 <button type="submit" class="btn btn-success">Update</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
 
                         </form>

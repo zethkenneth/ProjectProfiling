@@ -1,4 +1,4 @@
-<<nav class="navbar navbar-expand-lg justify-content-center">
+<nav class="navbar navbar-expand-lg justify-content-center">
    
    <div class="nav-brand">
        <img src="{{asset('assets/img/cm-seal.png')}}" width="100" height="90">
